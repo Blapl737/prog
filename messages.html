@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Сообщения - Мессенджер</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+      overflow: hidden;
+    }
+    .message-list {
+      margin-top: 20px;
+    }
+    .message {
+      background: #fff;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .message:hover {
+      background-color: #eaeaea;
+    }
+    .message h2 {
+      margin: 0;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #eaeaea;
+    }
+    .message p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Сообщения</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="settings.html">Настройки</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="message-list">
+      <div class="message" onclick="location.href='dialog1.html';">
+        <h2>Алексей</h2>
+        <p>Привет! Как дела?</p>
+      </div>
+      <div class="message" onclick="location.href='dialog2.html';">
+        <h2>Марина</h2>
+        <p>Ты не поверишь, что случилось...</p>
+      </div>
+      <div class="message" onclick="location.href='dialog3.html';">
+        <h2>Игорь</h2>
+        <p>Завтра встречаемся в 8 утра.</p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Spark</p>
+  </footer>
+</body>
+</html>
